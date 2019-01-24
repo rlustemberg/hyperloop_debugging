@@ -1,0 +1,17 @@
+<Alloy>
+    <TabGroup>
+        <Tab title="Tab1">
+            <Window id="w1">
+                <TextField class="control" id="queryText" hintText="search text"></TextField>
+                <Button class="control" id="search" onClick="search">Search</Button>
+                <Button class="control" id="trending" onClick="trending">Trending</Button>
+                <Button class="control" id="translate" onClick="translate">Translate</Button>
+            </Window>
+        </Tab>
+        <Tab title="Tab2">
+            <Window id="w2">
+                <Label>Window 2</Label>
+            </Window>
+        </Tab>
+    </TabGroup>
+</Alloy>

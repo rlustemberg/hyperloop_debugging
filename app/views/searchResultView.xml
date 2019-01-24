@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="window">
+		<Label id="title" top="100"/>
+		<ImageView module="av.imageview"  id="gifImage" platform="ios"  height="200" left="0" top="50"  handleCookies="Alloy.Globals.handleCookies"/>
+		<ImageView ns="Alloy.Globals.AvImageview" bindId="postImage" class="postImage" contentMode="Alloy.Globals.CONTENT_MODE_FILL" platform="android" handleCookies="Alloy.Globals.handleCookies"/>
+	</Window>
+</Alloy>

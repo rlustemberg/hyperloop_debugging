@@ -1,0 +1,22 @@
+<Alloy>
+	<Collection src="gif"></Collection>
+	<Window id="window">
+		<ListView id="listView" defaultItemTemplate="giphyListDefaultTemplate">
+			<Templates>
+				<ItemTemplate name="giphyListDefaultTemplate" id="item" class="defaultTemplate" height="240">
+							<Label bindId="captionText" class="captionText" wordWrap="false" top="5"></Label>
+							<ImageView ns="AvImageview" bindId="gifImage" class="gifImage" platform="ios"  height="200" left="0" bottom="5" handleCookies="Alloy.Globals.handleCookies"/>
+							<ImageView ns="Alloy.Globals.AvImageview" bindId="postImage" class="postImage" contentMode="Alloy.Globals.CONTENT_MODE_FILL" platform="android" handleCookies="Alloy.Globals.handleCookies"/>
+						</ItemTemplate>
+			</Templates>
+
+					<ListSection id="listSection" dataCollection="gif" >
+					<ListItem
+						captionText:text="{title}"
+						gifImage:image='{gifUrl}'
+						gifVideo:media="{mp4Url}"
+						/>
+					</ListSection>
+		</ListView>
+	</Window>
+</Alloy>
